@@ -46,6 +46,7 @@ trait Atomicity {
 		if ($this->cache->getDriverName() !== 'redis') {
 			throw new Exception('lock() is dependent on Redis of Cache ');
 		}
+
 		// 当前时刻
 		$time = time();
 		// 未来`过期时刻`

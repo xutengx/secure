@@ -8,7 +8,8 @@ use Error;
 use Exception;
 
 /**
- * 原子性
+ * Trait Atomicity 原子性
+ * @package Xutengx\Secure\Traits
  */
 trait Atomicity {
 
@@ -46,7 +47,6 @@ trait Atomicity {
 		if ($this->cache->getDriverName() !== 'redis') {
 			throw new Exception('lock() is dependent on Redis of Cache ');
 		}
-
 		// 当前时刻
 		$time = time();
 		// 未来`过期时刻`

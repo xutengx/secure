@@ -4,7 +4,8 @@ declare(strict_types = 1);
 namespace Xutengx\Secure\Traits;
 
 /**
- * 可逆加解密
+ * Trait Encryption 可逆加解密
+ * @package Xutengx\Secure\Traits
  */
 trait Encryption {
 
